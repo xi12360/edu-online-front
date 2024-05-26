@@ -1,0 +1,24 @@
+.logo{
+  width: 500px;
+  height: 100px;
+  position: relative;
+  color: transparent;
+  background: url('https://edu-online-james.oss-cn-beijing.aliyuncs.com/image/2023/09/12/logoText.svg') center/contain no-repeat;
+  cursor: pointer;
+}
+.logo::after{
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url('https://imgservices-1252317822.image.myqcloud.com/image/012420220165415/b0005044.svg') 0 / cover no-repeat;
+  right: 240px;
+  top: 25px;
+  animation: random 1s steps(10) infinite;
+}
+@keyframes random {
+  to {
+    background-position: 100%;
+  }
+}
+

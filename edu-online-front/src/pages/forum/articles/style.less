@@ -1,0 +1,44 @@
+@import '~antd/es/style/themes/default.less';
+
+a.listItemMetaTitle {
+  color: @heading-color;
+}
+.listItemExtra {
+  width: 272px;
+  height: 1px;
+}
+.selfTrigger {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: @screen-xs) {
+  .selfTrigger {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: @screen-md) {
+  .selfTrigger {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: @screen-lg) {
+  .listItemExtra {
+    width: 0;
+    height: 1px;
+  }
+}
+
+.articleNavigationContainer {
+  width: 100%; /* 让容器宽度占满父元素 */
+  display: flex;
+  //justify-content: space-around; /* 将按钮平均分布在容器中 */
+  align-items: center; /* 垂直居中按钮 */
+  padding: 10px; /* 可选：添加内边距 */
+}
+
+/* 自定义按钮样式，根据需要进行调整 */
+.antRadioButtonWrapper {
+  border: none
+}

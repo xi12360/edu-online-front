@@ -1,0 +1,75 @@
+@import '~antd/es/style/themes/default.less';
+@import './utils/utils.less';
+.coverCardList {
+  .card {
+    :global {
+      .ant-card-meta-title {
+        margin-bottom: -2px;
+        font-size: 18px;
+        & > a {
+          display: inline-block;
+          max-width: 100%;
+          color: @heading-color;
+        }
+      }
+      .ant-card-meta-description {
+        margin-bottom: -15px;
+        // 移除 height 和 overflow 属性
+        line-height: 20px;
+      }
+    }
+
+    &:hover {
+      :global {
+        .ant-card-meta-title > a {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+
+  .cardItemContent {
+    display: flex;
+    height: 20px;
+    margin-top: 16px;
+    margin-bottom: -4px;
+    line-height: 20px;
+    & > span {
+      flex: 1;
+      color: @text-color-secondary;
+      font-size: 12px;
+    }
+    .avatarList {
+      flex: 0 1 auto;
+    }
+  }
+  .cardList {
+    margin-top: 24px;
+  }
+
+  :global {
+    .ant-list .ant-list-item-content-single {
+      max-width: 100%;
+    }
+  }
+}
+
+.baseView {
+  flex-direction: column-reverse;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 448px;
+    padding: 20px;
+    .avatar_title {
+      display: none;
+    }
+  }
+}
+
+.fixed-img {
+  width: 200px; /* 设置宽度 */
+  height: 150px; /* 设置高度 */
+}
